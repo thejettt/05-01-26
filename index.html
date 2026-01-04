@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>05-01-26</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PAGE 1: ENVELOPE -->
+  <section id="page1" class="page active">
+    <div class="bg-glow"></div>
+
+    <div class="envelope-wrap">
+      <div class="envelope">
+        <div class="envelope-back"></div>
+        <div class="envelope-letter">
+            <div class="date"></div>
+            <div class="date"></div>
+            <div class="date"></div>
+            <div class="date"></div>
+            <div class="date"></div> 
+          <div class="date">05-01-26</div>
+          <div class="small">💝Happy Birtday Sayang💝</div>
+        </div>
+        <div class="envelope-front"></div>
+        <div class="envelope-flap"></div>
+      </div>
+
+      <button id="openBtn" class="bow-btn" aria-label="Buka amplop">
+        <span class="bow-loop left"></span>
+        <span class="bow-loop right"></span>
+        <span class="bow-knot"></span>
+        <span class="bow-text">Open</span>
+        <span class="bow-tail left"></span>
+        <span class="bow-tail right"></span>
+    </button>
+
+
+      <div class="hint">Klik pita untuk membuka 💌</div>
+    </div>
+  </section>
+
+  <!-- PAGE 2: CAKE + CANDLES -->
+  <section id="page2" class="page">
+    <div class="bg-stars"></div>
+
+    <div class="cake-scene">
+      <div class="title">Make a wish… then tap the flames 💖</div>
+
+      <div id="cake" class="cake">
+        <div class="cake-top"></div>
+        <div class="cake-body"></div>
+        <div class="cake-plate"></div>
+
+        <!-- 5 candles -->
+        <div class="candles">
+          <div class="candle" data-i="1"><div class="wick"></div><div class="flame" role="button" aria-label="Matikan lilin 1"></div></div>
+          <div class="candle" data-i="2"><div class="wick"></div><div class="flame" role="button" aria-label="Matikan lilin 2"></div></div>
+          <div class="candle" data-i="3"><div class="wick"></div><div class="flame" role="button" aria-label="Matikan lilin 3"></div></div>
+          <div class="candle" data-i="4"><div class="wick"></div><div class="flame" role="button" aria-label="Matikan lilin 4"></div></div>
+          <div class="candle" data-i="5"><div class="wick"></div><div class="flame" role="button" aria-label="Matikan lilin 5"></div></div>
+        </div>
+      </div>
+
+      <div id="counter" class="counter">Candles left: 5</div>
+      <div class="hint2">Klik apinya satu-satu ya 😚</div>
+    </div>
+  </section>
+
+  <!-- PAGE 3: CONFETTI + TICKET -->
+  <section id="page3" class="page">
+    <canvas id="confetti"></canvas>
+
+    <div class="ticket-wrap">
+      <div class="ticket">
+        <div class="ticket-top">
+          <div class="ticket-badge">Birthday Gift</div>
+          <div class="ticket-title">Dinner Ticket 🎟️</div>
+        </div>
+
+        <div class="ticket-mid">
+          <div class="ticket-line"></div>
+          <div class="ticket-text">
+            <div class="big">All You Can Eat</div>
+            <div class="place">Cocari</div>
+            <div class="when">See you in February sayang 💕</div>
+          </div>
+        </div>
+
+        <div class="ticket-bottom">
+          <div class="code">WITH LOVE-DZ</div>
+          <button id="replayBtn" class="soft-btn">Replay ✨</button>
+        </div>
+      </div>
+
+      <div class="final-note">Happy birthday cantik 💗</div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
